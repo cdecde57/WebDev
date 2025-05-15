@@ -1,0 +1,32 @@
+body{
+    background-color: #5ca0d7;
+    text-align: center;
+}
+
+.main-div{
+    
+}
+.main-title{
+    font-size: 3rem;
+    color: white;
+}
+.main-title:hover{
+    color: black;
+}
+
+.main-title-p{
+    color: white;
+}
+
+.secondary-title{
+    color: white;
+}
+
+.central-text{
+    font-size:3rem;
+    color:white;
+}
+
+.hero-img{
+
+}

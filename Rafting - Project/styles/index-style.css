@@ -1,3 +1,73 @@
+
+main section{
+    
+    text-align: center;
+}
+
+main section img{
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: white;
+    font-size: 22px;
+    padding: 0;
+    margin: 0;
+}
+header{
+    background-color: #2b74a1;
+}
+
+
+h4{
+    color: #2b74a1;
+}
+
+h2{
+    margin: 0;
+}
+
+nav{
+    background-color: #3b721d;
+}
+
+nav a{
+
+    text-align: center;
+    color: #f5f5f5;
+    text-decoration: none;
+    padding: 35px;
+}
+
+footer{
+    background-color: #2b74a1;
+    color: #f5f5f5;
+    padding: 25px 50px;
+    margin-top: 200px;
+}
+
+footer p a:hover{
+    text-decoration: underline;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+footer p{
+    font-size: 1.2em
+}
+
+footer a:hover{
+    color: #d33131;
+}
+
+footer .social img{
+    padding-top: 15px;
+}
+
 #content{
     max-width: 1600px;
     margin: 0 auto;
@@ -12,38 +82,29 @@
     width: 100%;
 }
 
+#logo-link{
+    padding-top: 5px;
+}
+
 
 .home-title{
     color: #2b74a1;
+    font-family:  Georgia, 'Times New Roman', Times, serif;
+    font-size: 2em;
+    margin-top: 10px;
 }
 
-.msg h2{
-    color: #f5f5f5;
-}
-
-.msg p{
-    color: #f5f5f5;
+.card-img{
+    border: 10px solid #3b721d;
 }
 
 
+.icon{
+    padding-top: 10px;
+}
 
 .logo, .icon{
     width: 80px;
-}
-
-h4{
-    color: #2b74a1;
-}
-
-nav{
-    background-color: #3b721d;
-}
-
-nav a{
-
-    text-align: center;
-    color: #f5f5f5;
-    text-decoration: none;
 }
 
 nav a:hover{
@@ -63,51 +124,39 @@ nav a:hover{
     text-align: center;
 }
 
-
-main section{
-    
-    text-align: center;
-}
-
-
-body{
-    background-color: white;
-}
-header{
+.msg{
     background-color: #2b74a1;
+    line-height: 1.5em;
+    padding: 35px;
 }
+
+.msg h2{
+    color: #f5f5f5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.msg p{
+    color: #f5f5f5;
+    font-size: .8em;
+    padding-bottom: 15px;
+}
+
+
 .book, .join{
     background-color: #3b721d;
     color: #f5f5f5;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
+
 .book:hover, .join:hover{
     background-color: #2d5617;
     color: #d33131;
 }   
 
-.msg{
-    background-color: #2b74a1;
-}
-
-footer{
-    background-color: #2b74a1;
-    color: #f5f5f5;
-}
-
-footer p a:hover{
-    text-decoration: underline;
-}
-
-footer a{
-    color: white;
-    text-decoration: none;
-}
-
-footer p{
-    font-size: 1.2em
-}
-
-footer a:hover{
-    color: #d33131;
+.rivers-card, .camping-card, .rapids-card{
+    margin: 200px 0;
 }
