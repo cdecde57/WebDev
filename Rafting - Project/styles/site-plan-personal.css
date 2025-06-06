@@ -79,7 +79,32 @@ header > h2 {
   color: var(--headline-color-on-color);
 }
 
-p {
+.leading-text{
+  border-radius: 10px;
+  background-color: #380000;
+  color: #ffffff;
+}
+.header-text{
+  border-radius: 10px;
+  background-color: #000e38;
+  color: #ffffff;
+}
+.code{
+  background-color: #b0b0b0;
+  border-radius: 10px;
+  text-align: left;
+  font-weight: 20%;
+}
+
+.list-header{
+  text-align: left;
+}
+
+ul{
+  text-align: left;
+}
+
+p,ul {
   font-family: var(--paragraph-font);
   color: var(--paragraph-color-on-white);
   padding: 1em;
