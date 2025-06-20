@@ -145,6 +145,10 @@ p.colored {
   color: var(--paragraph-color-on-color);
 }
 
+.site-plan-header{
+background-color: #000e38;
+}
+
 nav {
   background-color: var(--nav-background-color);
   line-height: 3em;
