@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../styles/personal-index-style.css" />
+    <link rel="stylesheet" href="../styles/site-plan-personal.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-grid">
+        <div class="hero">
+          <img
+            class="hero-img"
+            src="../personal-images/logo2.png"
+            alt="The Hero Image"
+          />
+        </div>
+
+        <nav class="header-nav">
+          <a href="index.html">Welcome!</a>
+          <a href="b1cpu.html">B1 The CPU</a>
+          <a href="e1cpu.html">E1 The CPU</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="welcome-section">
+        <h1 class="header-text">E1 The CPU</h1>
+        <p class="header-text">The X86 Machine Model</p>
+
+        <img
+          src="../personal-images/page-1/CPU-Instructions-white.png"
+          alt="CPU Instructions - Gears"
+        />
+      </section>
+      <p class="leading-text">
+        We begin our journey with exploring the
+        <b>Central Processing Unit</b> within a computer! This is the brain of
+        the computer. This is what we will learn to control. If we can learn to
+        interact with it using very simple instructions, we will be able to
+        control about anything the computer does!
+      </p>
+      <br />
+      <p>
+        The CPU knows what to do because it receives instructions to do certain
+        things. Computers have been around for a minute now and as such there
+        are a few standards created that we follow and should be aware of as we
+        learn about what these instructions are, and how we can give them to the
+        CPU. The are 2 main x86 instruction layouts: AT&T and Intel. Inside of
+        Intel's instruction set, all destinations (destination for a value or
+        similar) goes first and the source last, while AT&T does reverse order.
+        Once we look at the instructions, this will become more clear.
+      </p>
+      <br />
+      <img
+        src="../personal-images/page-1/Computer-Architecture.png"
+        alt="Computer Architecture - House"
+      />
+      <p>
+        The X86 architecture makes use of CPU Registers. These are small, very
+        fast memory chips with the CPU. We use registers when working with
+        memory in assembly. We can also access CPU flags or comparison flags if
+        we perform a comparison between 2 registers. These registers have
+        different sizes depending on your architecture, 16, 32, or 64 bit.
+      </p>
+      <br />
+      <p>
+        X86 is forward compatible, but <b>not</b> backward compatible. This
+        means that old programs like 16 bit versions can run just fine on 64 bit
+        machines, but 64 bit versions cannot run on 16 bit machines. This is in
+        part because the CPU registers we use can be shrunk or expanded in a
+        figure of speech. Think about it, if you have a 64bit wide register but
+        a 16 bit program, it will only need to use the first 16 bits of that
+        register, this won't cause any issues.
+      </p>
+      <br />
+      <p>
+        The main difference between the architectures is that 64 bit
+        architectures have 8 extra memory registers We cannot access these in
+        earlier architectures.
+      </p>
+      <br />
+      <p>
+        X86 follows a segmented memory model. This means the code, data, and
+        stack are all in different locations in memory. ARM does not follow this
+        method and will place addresses wherever.
+      </p>
+      <br />
+      <p>
+        X86 also allows us to work with floating point data. To do this we have
+        a floating point stack which holds 8 10-byte (80 bit) values. These are
+        not CPU registers, but can access them and work with them similarly to
+        CPU registers. When we cover them you will learn to work with them using
+        PUSH and POP Stack functions.
+      </p>
+      <br />
+      <br />
+      <h4>Basic CPU Instructions</h4>
+      <p class="leading-text">
+        Lets clarify what we mean when we talk about 'instructions' when talking
+        about a CPU or Central Processing Unit. For this to happen, lets explore
+        what the syntax for an instruction is.
+      </p>
+      <br />
+
+      <pre class="code">
+  
+        &lt;label&gt; &lt;assembly instruction&gt; ; comment
+        &lt;assembly instruction&gt; ; comment
+        &lt;assembly instruction&gt; &lt;operand 1&gt; ; comment
+        &lt;assembly instruction&gt; &lt;operand 1&gt; &lt;operand 2&gt; ; comment
+      </pre>
+      <br />
+      <p class="list-header">Rules:</p>
+      <ul>
+        <li>
+          An instruction is a command that the CPU will execute. Labels are used
+          when using things like branch instructions.
+        </li>
+        <li>
+          If we have 1 operand that normally means it is the source and
+          destination. If we have 2 operands then the first is the destination,
+          the second is the source
+        </li>
+
+        <li>
+          A constant / immediate number can only be as big as the bit size in
+          use. For example if we are using 32 bits, the maximum number would
+          have to be represented in 32 bits.
+        </li>
+      </ul>
+      <br />
+      <ul class="list-header">
+        Rules for operands:
+      </ul>
+      <ul>
+        <li>Both operands can be a register</li>
+        <li>One of the operands can be a constant / immediate</li>
+        <li>
+          One of the operands can be a memory location (a direct address) this
+          is done by using brackets []. We'll see this later on
+        </li>
+      </ul>
+    </main>
+
+    <footer>
+      <nav class="footer-nav">
+        <div class="footer-logo">
+          <img
+            class="footer-logo-img"
+            src="../personal-images/logo1.png"
+            alt="logo"
+          />
+          <a href="site-plan-personal.html">Site-Plan</a>
+        </div>
+
+        <p class="footer-text">Copyright 2025 - Thomas Gardner</p>
+        <div class="footer-links">
+          <img
+            class="footer-img"
+            src="../personal-images/linkedin2.svg"
+            alt="Linkedin Logo"
+          />
+          <a href="https://www.linkedin.com/in/thomas-gardner-8158881b7/"
+            >Linkedin</a
+          >
+          <img
+            class="footer-img"
+            src="../personal-images/github2.svg"
+            alt="Github Logo"
+          />
+          <a href="https://github.com/cdecde57">Github</a>
+        </div>
+      </nav>
+    </footer>
+  </body>
+</html>
