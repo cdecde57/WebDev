@@ -79,6 +79,7 @@ header > h2 {
   border-radius: 10px;
   background-color: #380000;
   color: #ffffff;
+  min-width: 100px;
 }
 .header-text {
   border-radius: 10px;
@@ -89,7 +90,9 @@ header > h2 {
   background-color: #b0b0b0;
   border-radius: 10px;
   text-align: left;
+  min-width: 100px;
   font-weight: 20%;
+  padding: 0.2rem;
 }
 
 .list-header {
@@ -99,7 +102,8 @@ header > h2 {
   padding: 0;
 }
 
-ul,ol {
+ul,
+ol {
   text-align: left;
 }
 
@@ -151,8 +155,8 @@ p.colored {
   color: var(--paragraph-color-on-color);
 }
 
-.site-plan-header{
-background-color: #000e38;
+.site-plan-header {
+  background-color: #000e38;
 }
 
 nav {
@@ -160,14 +164,13 @@ nav {
   line-height: 3em;
   text-align: center;
   font-size: 1.2em;
-}
-nav {
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
 }
 nav a {
   padding: 1em;
-  min-width: 120px;
+  min-width: 100px;
   text-decoration: none;
 }
 
@@ -176,13 +179,15 @@ nav a {
   text-decoration: none;
 }
 
-li a:link, li a:visited, nav a:link,
+li a:link,
+li a:visited,
+nav a:link,
 nav a:visited {
   color: var(--nav-link-color);
   text-decoration-line: none;
-
 }
-nav a:hover, li a:hover {
+nav a:hover,
+li a:hover {
   color: var(--nav-hover-link-color);
   background-color: var(--nav-hover-background-color);
 }
@@ -190,10 +195,10 @@ nav a:hover, li a:hover {
 .header-grid {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
+  min-width: 100px;
 }
 
 .hero {
-  width: 100%;
   background-color: #b0b0b0;
 }
 
@@ -293,47 +298,96 @@ nav a:hover, li a:hover {
   border-right: 1px solid;
 }
 
-.page-img{
+.page-img {
   height: 50%;
   width: 50%;
 }
 
-
-.highlight-box{
+.highlight-box {
   display: grid;
   grid-template-columns: repeat(1, 50%);
   grid-template-rows: repeat(2);
-  width: 70%;
   padding: 1rem;
   border-radius: 20px;
   box-shadow: 0px 0px 20px black;
   background-color: #584a19;
+  margin: 0 auto;
+  min-width: 100px;
 }
 
-.highlight-box p, .highlight-box h1{
+.highlight-box p,
+.highlight-box h1 {
   color: #ffffff;
 }
 
 
-.highlight-box{
-  margin: 0 auto;
-}
-
-.highlight-box h1{
+.highlight-box h1 {
   grid-column: 1 / span 2;
   grid-row: 1;
 }
 
-.highlight-box img{
-  height: 20rem;
-  width: 20rem;
-
+.highlight-box img {
+  height: auto;
+  width: 50%;
   grid-column: 2;
   grid-row: 2;
-  
 }
 
-.highlight-box p{
+.highlight-box p {
   grid-column: 1;
   grid-row: 2;
+}
+
+.image-card {
+  display: grid;
+  grid-template-rows: 3;
+  grid-template-columns: repeat(1, 1fr);
+  background-color: #000e38;
+  width: 20%;
+  height: 30%;
+  row-gap: 1rem;
+  padding: 1rem;
+  border-radius: 20px;
+  font-size: calc();
+  min-width: 100px;
+  margin: 1rem;
+}
+
+.image-card:hover{
+  width: 25%;
+  height: 35%;
+}
+
+.image-card img {
+  height: auto;
+  width: 50%;
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.image-card p,
+.image-card h1 {
+  align-self: center;
+  display: inline;
+  padding: 0;
+  margin: 0;
+  color: #ffffff;
+}
+
+.component-carosusell {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10%;
+  align-items: center;
+  justify-items: center;
+  overflow: visible;
+}
+
+.reading-text {
+  min-width: 100px;
+  border: 1px solid #b0b0b0;
+  border-radius: 30px;
+  line-height: 1.5rem;
+  padding: 0 1rem;
+  word-wrap: break-word;
 }

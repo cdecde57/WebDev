@@ -37,15 +37,15 @@
         />
       </section>
 
-      <div>
-        <p class="leading-text">
-          We begin our journey with exploring the
-          <b>Central Processing Unit</b> within a computer! This is the brain of
-          the computer. This is what we will learn to control. If we can learn
-          to interact with it using very simple instructions, we will be able to
-          control about anything the computer does!
-        </p>
-        <br />
+      <p class="leading-text">
+        We begin our journey with exploring the
+        <b>Central Processing Unit</b> within a computer! This is the brain of
+        the computer. This is what we will learn to control. If we can learn to
+        interact with it using very simple instructions, we will be able to
+        control about anything the computer does!
+      </p>
+      <br />
+      <div class="reading-text">
         <p>
           The CPU knows what to do because it receives instructions to do
           certain things. Computers have been around for a minute now and as
@@ -57,12 +57,15 @@
           while AT&T does reverse order. Once we look at the instructions, this
           will become more clear.
         </p>
-        <br />
-        <img
-          src="../personal-images/page-1/Computer-Architecture.png"
-          alt="Computer Architecture - House"
-          class="page-img"
-        />
+      </div>
+      <br />
+      <img
+        src="../personal-images/page-1/Computer-Architecture.png"
+        alt="Computer Architecture - House"
+        class="page-img"
+      />
+      <br />
+      <div class="reading-text">
         <p>
           The X86 architecture makes use of CPU Registers. These are small, very
           fast memory chips with the CPU. We use registers when working with
@@ -70,39 +73,43 @@
           if we perform a comparison between 2 registers. These registers have
           different sizes depending on your architecture, 16, 32, or 64 bit.
         </p>
-        <br />
+      </div>
+      <br />
+      <br />
 
-        <div class="highlight-box">
-          <h1>Things to keep in mind</h1>
-          <p>
-            X86 is forward compatible, but <b>not</b> backward compatible. This
-            means that old programs like 16 bit versions can in theory run just
-            fine on 64 bit machines, but 64 bit versions cannot run on 16 bit
-            machines. This is in part because the CPU registers we use can be
-            shrunk or expanded in a figure of speech. Think about it, if you
-            have a 64bit wide register but a 16 bit program, it will only need
-            to use the first 16 bits of that register, this won't cause any
-            issues. This <span class="emphasis-text"> does not mean </span> we
-            can run 16 bit programs on simply any system. This is because most
-            modern operating systems have not been developed to support the older architecture without heavy
-            virtualization.
-          </p>
-          <img src="../personal-images/page-1/backward-compatability.png" alt="Arrows depicting backward compatability but not forward compatability">
-        </div>
-
-        <br />
+      <div class="highlight-box">
+        <h1>Things to keep in mind</h1>
+        <p>
+          X86 is forward compatible, but <b>not</b> backward compatible. This
+          means that old programs like 16 bit versions can in theory run just
+          fine on 64 bit machines, but 64 bit versions cannot run on 16 bit
+          machines. This is in part because the CPU registers we use can be
+          shrunk or expanded in a figure of speech. Think about it, if you have
+          a 64bit wide register but a 16 bit program, it will only need to use
+          the first 16 bits of that register, this won't cause any issues. This
+          <span class="emphasis-text"> does not mean </span> we can run 16 bit
+          programs on simply any system. This is because most modern operating
+          systems have not been developed to support the older architecture
+          without heavy virtualization.
+        </p>
+        <img
+          src="../personal-images/page-1/backward-compatability.png"
+          alt="Arrows depicting backward compatability but not forward compatability"
+        />
+      </div>
+      <br />
+      <br />
+      <div class="reading-text">
         <p>
           The main difference between the architectures is that 64 bit
           architectures have 8 extra memory registers We cannot access these in
           earlier architectures.
         </p>
-        <br />
         <p>
           X86 follows a segmented memory model. This means the code, data, and
           stack are all in different locations in memory. ARM does not follow
           this method and will place addresses wherever.
         </p>
-        <br />
         <p>
           X86 also allows us to work with floating point data. To do this we
           have a floating point stack which holds 8 10-byte (80 bit) values.
@@ -110,24 +117,31 @@
           similarly to CPU registers. When we cover them you will learn to work
           with them using PUSH and POP Stack functions.
         </p>
-        <br />
-        <br />
-        <h4>Basic CPU Instructions</h4>
-        <p class="leading-text">
-          Lets clarify what we mean when we talk about 'instructions' when
-          talking about a CPU or Central Processing Unit. For this to happen,
-          lets explore what the syntax for an instruction is.
-        </p>
-        <br />
+      </div>
+      <br />
+      <br />
+      <h4>Basic CPU Instructions</h4>
+      <p class="leading-text">
+        Lets clarify what we mean when we talk about 'instructions' when talking
+        about a CPU or Central Processing Unit. For this to happen, lets explore
+        what the syntax for an instruction is.
+      </p>
+      <br />
 
-        <pre class="code">
-  
-        &lt;label&gt; &lt;assembly instruction&gt; ; comment
-        &lt;assembly instruction&gt; ; comment
-        &lt;assembly instruction&gt; &lt;operand 1&gt; ; comment
-        &lt;assembly instruction&gt; &lt;operand 1&gt; &lt;operand 2&gt; ; comment
-      </pre
-        >
+      <div class="code">
+        <p>
+          &lt;label&gt; &lt;assembly instruction&gt; ; comment
+          <br />
+          &lt;assembly instruction&gt; ; comment
+          <br />
+          &lt;assembly instruction&gt; &lt;operand 1&gt; ; comment
+          <br />
+          &lt;assembly instruction&gt; &lt;operand 1&gt; &lt;operand 2&gt; ;
+          comment
+        </p>
+      </div>
+      <br />
+      <div class="reading-text">
         <br />
         <p class="list-header">Rules:</p>
         <ul>
@@ -160,6 +174,8 @@
           </li>
         </ul>
       </div>
+      <br />
+      <br />
     </main>
 
     <footer>

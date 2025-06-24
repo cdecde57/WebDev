@@ -1,28 +1,34 @@
-.welcome-section{
-    border-radius: 10px;
-    background-color: #000e38;
-
+.welcome-section {
+  border-radius: 10px;
+  background-color: #000e38;
+  min-width: 100px;
 }
 
-.welcome-section img{
-    height: 10rem;
+.welcome-section img {
+  height: 10rem;
+  min-width: 100px;
 }
 
-.table-of-contents{
-    padding: 2%;
+.table-of-contents {
+  padding: 2%;
 }
-.table-of-contents li{
-    list-style: none;
-    margin-bottom: 0.6rem;
-}
-
-.child-list-item{
-    padding-left: 0.6rem;
+.table-of-contents li {
+  list-style: none;
+  margin-bottom: 0.6rem;
 }
 
-#ToC{
-    border-radius: 10px;
-    box-shadow: 15px 15px 20px #b0b0b0;
-    background-color: #b0b0b0;
-    margin: 3rem 0;
+.child-list-item {
+  padding-left: 0.6rem;
+}
+
+#ToC {
+  border-radius: 10px;
+  box-shadow: 15px 15px 20px #b0b0b0;
+  background-color: #b0b0b0;
+  margin: 3rem 0;
+  min-width: 100px;
+}
+
+#cpu-gears{
+  
 }
