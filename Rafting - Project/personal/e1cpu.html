@@ -61,6 +61,7 @@
         <img
           src="../personal-images/page-1/Computer-Architecture.png"
           alt="Computer Architecture - House"
+          class="page-img"
         />
         <p>
           The X86 architecture makes use of CPU Registers. These are small, very
@@ -70,15 +71,25 @@
           different sizes depending on your architecture, 16, 32, or 64 bit.
         </p>
         <br />
-        <p>
-          X86 is forward compatible, but <b>not</b> backward compatible. This
-          means that old programs like 16 bit versions can run just fine on 64
-          bit machines, but 64 bit versions cannot run on 16 bit machines. This
-          is in part because the CPU registers we use can be shrunk or expanded
-          in a figure of speech. Think about it, if you have a 64bit wide
-          register but a 16 bit program, it will only need to use the first 16
-          bits of that register, this won't cause any issues.
-        </p>
+
+        <div class="highlight-box">
+          <h1>Things to keep in mind</h1>
+          <p>
+            X86 is forward compatible, but <b>not</b> backward compatible. This
+            means that old programs like 16 bit versions can in theory run just
+            fine on 64 bit machines, but 64 bit versions cannot run on 16 bit
+            machines. This is in part because the CPU registers we use can be
+            shrunk or expanded in a figure of speech. Think about it, if you
+            have a 64bit wide register but a 16 bit program, it will only need
+            to use the first 16 bits of that register, this won't cause any
+            issues. This <span class="emphasis-text"> does not mean </span> we
+            can run 16 bit programs on simply any system. This is because most
+            modern operating systems have not been developed to support the older architecture without heavy
+            virtualization.
+          </p>
+          <img src="../personal-images/page-1/backward-compatability.png" alt="Arrows depicting backward compatability but not forward compatability">
+        </div>
+
         <br />
         <p>
           The main difference between the architectures is that 64 bit

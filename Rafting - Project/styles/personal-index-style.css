@@ -7,3 +7,22 @@
 .welcome-section img{
     height: 10rem;
 }
+
+.table-of-contents{
+    padding: 2%;
+}
+.table-of-contents li{
+    list-style: none;
+    margin-bottom: 0.6rem;
+}
+
+.child-list-item{
+    padding-left: 0.6rem;
+}
+
+#ToC{
+    border-radius: 10px;
+    box-shadow: 15px 15px 20px #b0b0b0;
+    background-color: #b0b0b0;
+    margin: 3rem 0;
+}

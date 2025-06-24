@@ -95,9 +95,11 @@ header > h2 {
 .list-header {
   text-align: left;
   color: #ff2929;
+  margin: 0;
+  padding: 0;
 }
 
-ul {
+ul,ol {
   text-align: left;
 }
 
@@ -140,6 +142,10 @@ ul {
   background-color: var(--emphasis-color);
 }
 
+.emphasis-text {
+  color: var(--emphasis-color);
+}
+
 p.colored {
   background-color: var(--paragraph-background-color);
   color: var(--paragraph-color-on-color);
@@ -170,11 +176,13 @@ nav a {
   text-decoration: none;
 }
 
-nav a:link,
+li a:link, li a:visited, nav a:link,
 nav a:visited {
   color: var(--nav-link-color);
+  text-decoration-line: none;
+
 }
-nav a:hover {
+nav a:hover, li a:hover {
   color: var(--nav-hover-link-color);
   background-color: var(--nav-hover-background-color);
 }
@@ -284,3 +292,37 @@ nav a:hover {
   border-top: 1px solid;
   border-right: 1px solid;
 }
+
+.page-img{
+  height: 50%;
+  width: 50%;
+}
+
+
+.highlight-box{
+  display: grid;
+  grid-template-columns: repeat(1, 50%);
+  grid-template-rows: repeat(2);
+  width: 70%;
+  padding: 1rem;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px black;
+  background-color: #584a19;
+}
+
+.highlight-box p, .highlight-box h1{
+  color: #ffffff;
+}
+
+.highlight-box h1{
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+
+.highlight-box img{
+  height: 20rem;
+  width: 20rem;
+  float: right;
+  
+}
+
