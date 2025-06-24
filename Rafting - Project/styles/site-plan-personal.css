@@ -196,10 +196,13 @@ li a:hover {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   min-width: 100px;
+  align-items: end;
 }
 
 .hero {
   background-color: #b0b0b0;
+  max-height:min-content;
+  
 }
 
 .hero-img {
@@ -210,6 +213,7 @@ li a:hover {
 }
 
 .header-nav {
+  align-self: start;
   grid-row: 2;
 }
 
