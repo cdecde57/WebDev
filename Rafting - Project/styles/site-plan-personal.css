@@ -314,6 +314,11 @@ nav a:hover, li a:hover {
   color: #ffffff;
 }
 
+
+.highlight-box{
+  margin: 0 auto;
+}
+
 .highlight-box h1{
   grid-column: 1 / span 2;
   grid-row: 1;
@@ -322,7 +327,13 @@ nav a:hover, li a:hover {
 .highlight-box img{
   height: 20rem;
   width: 20rem;
-  float: right;
+
+  grid-column: 2;
+  grid-row: 2;
   
 }
 
+.highlight-box p{
+  grid-column: 1;
+  grid-row: 2;
+}
