@@ -358,8 +358,7 @@ li a:hover {
 }
 
 .image-card:hover{
-  width: 25%;
-  height: 35%;
+  box-shadow:  10px 10px 10px #380000;
 }
 
 .image-card img {
@@ -377,6 +376,64 @@ li a:hover {
   margin: 0;
   color: #ffffff;
 }
+
+.image-card p.invisible{
+  display: none;
+  
+}
+
+.modal-base{
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #000e3880;
+  text-align: center;
+}
+
+.modal-box{
+  margin: 5% auto;
+  width: 25%;
+  height: 60%;
+  min-width: 100px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow:  10px 10px 10px #584a19;
+  padding: 2%;
+  overflow: auto;
+
+}
+
+.modal-box img{
+  width: 50%;
+  height: auto;
+}
+
+.modal-close{
+  background-color: #b0b0b0;
+  min-width: fit-content;
+  min-height: fit-content;
+  max-width: fit-content;
+  max-height: fit-content;
+  margin: 0 auto;
+  padding: 2%;
+
+}
+
+.modal-close:hover{
+  background-color: #000e38;
+  color: #b0b0b0;
+}
+
+
+.modal-base.model-visible{
+  display: block;
+}
+
+
 
 .component-carosusell {
   display: flex;

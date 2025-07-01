@@ -61,13 +61,27 @@
       </div>
 
       <div class="component-carosusell">
-        <section id="cpu" class="image-card">
+        <section
+          id="cpu"
+          class="image-card"
+          onmouseover="toggleTitle(1)"
+          onmouseout="toggleTitle(1)"
+          onclick="toggleModal(1)"
+        >
+          <p id="card-num-1" class="invisible">1 / 5</p>
           <h1>CPU</h1>
           <img src="../personal-images/page-1/CPU.jpg" alt="Image of a CPU" />
           <p>The Central Processing unit - The brain of the computer</p>
         </section>
 
-        <section id="ram" class="image-card">
+        <section
+          id="ram"
+          class="image-card"
+          onmouseover="toggleTitle(2)"
+          onmouseout="toggleTitle(2)"
+          onclick="toggleModal(2)"
+        >
+          <p id="card-num-2" class="invisible">2 / 5</p>
           <h1>RAM</h1>
           <img
             src="../personal-images/page-1/RAM.jpg"
@@ -76,7 +90,14 @@
           <p>Random Access Memory - Short Term Storage for processes</p>
         </section>
 
-        <section id="psu" class="image-card">
+        <section
+          id="psu"
+          class="image-card"
+          onmouseover="toggleTitle(3)"
+          onmouseout="toggleTitle(3)"
+          onclick="toggleModal(3)"
+        >
+          <p id="card-num-3" class="invisible">3 / 5</p>
           <h1>PSU</h1>
           <img src="../personal-images/page-1/PSU.jpg" alt="Image of a PSU" />
           <p>
@@ -84,7 +105,14 @@
           </p>
         </section>
 
-        <section id="hd" class="image-card">
+        <section
+          id="hd"
+          class="image-card"
+          onmouseover="toggleTitle(4)"
+          onmouseout="toggleTitle(4)"
+          onclick="toggleModal(4)"
+        >
+          <p id="card-num-4" class="invisible">4 / 5</p>
           <h1>HD</h1>
           <img
             src="../personal-images/page-1/HD.png"
@@ -93,7 +121,14 @@
           <p>Hard Drive - Long Term Storage</p>
         </section>
 
-        <section id="motherb" class="image-card">
+        <section
+          id="motherb"
+          class="image-card"
+          onmouseover="toggleTitle(5)"
+          onmouseout="toggleTitle(5)"
+          onclick="toggleModal(5)"
+        >
+          <p id="card-num-5" class="invisible">5 / 5</p>
           <h1>MB</h1>
           <img
             src="../personal-images/page-1/Motherboard.jpg"
@@ -103,6 +138,69 @@
             The Motherboard - The big chip that connects everything together
           </p>
         </section>
+      </div>
+
+      <div class="modal-base" id="modal-1">
+        <div class="modal-box">
+          <h1>CPU</h1>
+          <img src="../personal-images/page-1/CPU.jpg" alt="Image of a CPU" />
+          <p>The Central Processing unit - The brain of the computer</p>
+
+          <div class="modal-close" onclick="toggleModal(1)">Close</div>
+        </div>
+      </div>
+
+      <div class="modal-base" id="modal-2">
+        <div class="modal-box">
+          <h1>RAM</h1>
+          <img
+            src="../personal-images/page-1/RAM.jpg"
+            alt="Image of a RAM chip"
+          />
+          <p>Random Access Memory - Short Term Storage for processes</p>
+
+          <div class="modal-close" onclick="toggleModal(2)">Close</div>
+        </div>
+      </div>
+
+      <div class="modal-base" id="modal-3">
+        <div class="modal-box">
+          <h1>PSU</h1>
+          <img src="../personal-images/page-1/PSU.jpg" alt="Image of a PSU" />
+          <p>
+            Power Supply Unit - The 'battery' or energy source for your computer
+          </p>
+
+          <div class="modal-close" onclick="toggleModal(3)">Close</div>
+        </div>
+      </div>
+
+      <div class="modal-base" id="modal-4">
+        <div class="modal-box">
+          <h1>HD</h1>
+          <img
+            src="../personal-images/page-1/HD.png"
+            alt="Image of a hard drive"
+          />
+          <p>Hard Drive - Long Term Storage</p>
+
+          <div class="modal-close" onclick="toggleModal(4)">Close</div>
+        </div>
+      </div>
+
+      <div class="modal-base" id="modal-5">
+        <div class="modal-box">
+          <h1>MB</h1>
+          <img
+            src="../personal-images/page-1/Motherboard.jpg"
+            alt="Image of a Motherboard"
+          />
+          <p>
+            The Motherboard - The big chip that connects everything together
+          </p>
+
+          <div class="modal-close" onclick="toggleModal(5)">Close</div>
+        </div>
       </div>
 
       <br />
@@ -185,5 +283,7 @@
         </div>
       </nav>
     </footer>
+
+    <script src="../personal-scripts/index.js"></script>
   </body>
 </html>
