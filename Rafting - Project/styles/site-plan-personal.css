@@ -91,7 +91,7 @@ header > h2 {
   border-radius: 10px;
   text-align: left;
   min-width: 100px;
-  font-weight: 20%;
+  font-weight: bold;
   padding: 0.2rem;
 }
 
@@ -309,7 +309,6 @@ li a:hover {
 .highlight-box {
   display: grid;
   grid-template-columns: repeat(1, 50%);
-  grid-template-rows: repeat(2);
   padding: 1rem;
   border-radius: 20px;
   box-shadow: 0px 0px 20px black;
@@ -342,7 +341,6 @@ li a:hover {
 
 .image-card {
   display: grid;
-  grid-template-rows: 3;
   grid-template-columns: repeat(1, 1fr);
   background-color: #000e38;
   width: 20%;
@@ -350,7 +348,6 @@ li a:hover {
   row-gap: 1rem;
   padding: 1rem;
   border-radius: 20px;
-  font-size: calc();
   min-width: 100px;
   margin: 1rem;
 }
