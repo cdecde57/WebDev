@@ -4,7 +4,7 @@ function toggleTitle(titleNumber){
     // Find the p tag acting as the title
     var title = document.querySelector(`#card-num-${titleNumber}`);
     
-    // Toggle the invisible class on the title
+    // Toggle the invisible class on the title (display / no display)
     title.classList.toggle("invisible");
 }
 
@@ -14,9 +14,7 @@ function toggleModal(titleNumber){
     // Find the modal we're toggling
     var modal = document.querySelector(`#modal-${titleNumber}`);
 
-    console.log(modal)
-
-    // Toggle it
+    // Toggle the invisibility affect of the modal (turn it off / on)
     modal.classList.toggle("model-visible");
 }
 
